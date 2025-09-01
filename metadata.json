@@ -1,0 +1,5 @@
+{
+  "name": "Sistem Guru Ganti",
+  "description": "Aplikasi untuk menjana jadual guru ganti secara automatik menggunakan AI.",
+  "requestFramePermissions": []
+}
