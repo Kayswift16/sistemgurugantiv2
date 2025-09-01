@@ -127,7 +127,7 @@ export const handler: Handler = async (event) => {
           },
         });
 
-        const jsonText = response.text.trim();
+        const jsonText = response.text;
         if (!jsonText) {
             throw new Error("API mengembalikan respons kosong.");
         }
@@ -135,7 +135,7 @@ export const handler: Handler = async (event) => {
         return {
             statusCode: 200,
             headers: { 'Content-Type': 'application/json' },
-            body: jsonText,
+            body: jsonText.trim(),
         };
 
     } catch (error) {
